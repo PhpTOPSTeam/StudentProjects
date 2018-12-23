@@ -1,0 +1,14 @@
+<?php
+error_reporting(0);
+session_start();
+if(isset($_SESSION['user']))
+{
+	include('alheader.php');
+}
+else
+{
+include('blheader.php');
+}
+include('blmainpage.php');
+include('footer.php');
+?>
